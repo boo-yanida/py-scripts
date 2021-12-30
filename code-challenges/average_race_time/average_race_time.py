@@ -19,7 +19,7 @@ def get_rhines_times():
     for row in list_races[1:]: #skip header (row index = 0)
         if row.count('Jennifer Rhines') > 0:
             #print(f"**{row}**")
-            cols = row.rsplit() # rsplit - When delimiter is not specified, the string is split on whitespace.
+            cols = row.split() 
             #print(cols)
             rhines_times.append(cols[0])
     return rhines_times
