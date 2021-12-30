@@ -48,4 +48,6 @@ def get_average():
     return result
 
 if __name__ == "__main__":
-    get_average()
+    result = get_average()
+    print(result)
+    
